@@ -104,7 +104,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setFont(new java.awt.Font("Apple Color Emoji", 0, 10));
+        setFont(new java.awt.Font("Apple Color Emoji", 0, 10)); // NOI18N
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setText("pSize");
@@ -159,7 +159,12 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        statsPath.setText("/Users/wfbarksdale/School/Richmond_2012/GP/tester.txt");
+        statsPath.setText("/Desktop/tester.txt");
+        statsPath.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                statsPathActionPerformed(evt);
+            }
+        });
 
         jLabel15.setText("Stats Path");
 
@@ -239,7 +244,7 @@ public class MainWindow extends javax.swing.JFrame {
                                 .add(jLabel4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .add(jLabel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .add(jLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 87, Short.MAX_VALUE))
+                                .add(jLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .add(jLabel15))
                         .add(18, 18, 18)
                         .add(populationViewLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -281,7 +286,7 @@ public class MainWindow extends javax.swing.JFrame {
                                                     .add(bSize, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 58, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                                                     .add(populationViewLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                                                         .add(functionString, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 458, Short.MAX_VALUE)
-                                                        .add(sequenceTextfield, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 458, Short.MAX_VALUE)))))
+                                                        .add(sequenceTextfield, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 486, Short.MAX_VALUE)))))
                                         .add(44, 44, 44))))))
                     .add(populationViewLayout.createSequentialGroup()
                         .add(ElitismRadioButton)
@@ -368,7 +373,7 @@ public class MainWindow extends javax.swing.JFrame {
                     .add(maxAgeTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .add(18, 18, 18)
                 .add(DeathRadioButton)
-                .addContainerGap(140, Short.MAX_VALUE))
+                .addContainerGap(153, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Population", populationView);
@@ -393,7 +398,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel12.setText("returned x:");
 
-        genomeContents.setFont(new java.awt.Font("Monospaced", 0, 12));
+        genomeContents.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         genomeContents.setText(">");
 
         currentX.setText("0");
@@ -462,7 +467,7 @@ public class MainWindow extends javax.swing.JFrame {
                                     .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel9, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
                                     .add(org.jdesktop.layout.GroupLayout.LEADING, organismViewLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
                                         .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel8, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .add(jLabel12, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
+                                        .add(jLabel12, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .add(jLabel10, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .add(jLabel11, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .add(jLabel14)))
@@ -491,14 +496,13 @@ public class MainWindow extends javax.swing.JFrame {
                                             .add(orgviewFunctionString, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
                                             .add(orgviewFunctionSize)))))
                             .add(org.jdesktop.layout.GroupLayout.TRAILING, organismViewLayout.createSequentialGroup()
-                                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 720, Short.MAX_VALUE)
+                                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 748, Short.MAX_VALUE)
                                 .add(232, 232, 232))))
                     .add(organismViewLayout.createSequentialGroup()
                         .add(46, 46, 46)
                         .add(organismViewLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(stepButton)
-                            .add(jumpButton))
-                        .add(845, 845, 845))
+                            .add(jumpButton)))
                     .add(organismViewLayout.createSequentialGroup()
                         .add(28, 28, 28)
                         .add(loadGenomeButton)))
@@ -551,7 +555,7 @@ public class MainWindow extends javax.swing.JFrame {
                         .add(organismViewLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(jumpButton)
                             .add(orgviewReverseCheckbox))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 10, Short.MAX_VALUE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 40, Short.MAX_VALUE)
                         .add(organismViewLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(orgviewFunctionSize, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                             .add(jLabel13))
@@ -569,11 +573,11 @@ public class MainWindow extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jTabbedPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 1013, Short.MAX_VALUE)
+            .add(jTabbedPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jTabbedPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 748, Short.MAX_VALUE)
+            .add(jTabbedPane1)
         );
 
         pack();
@@ -676,6 +680,10 @@ private void sequenceTextfieldActionPerformed(java.awt.event.ActionEvent evt) {/
 private void sequenceCheckboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sequenceCheckboxActionPerformed
 // TODO add your handling code here:
 }//GEN-LAST:event_sequenceCheckboxActionPerformed
+
+    private void statsPathActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statsPathActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_statsPathActionPerformed
 
     /**
      * @param args the command line arguments

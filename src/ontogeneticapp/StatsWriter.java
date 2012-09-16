@@ -1,8 +1,10 @@
 package ontogeneticapp;
 
 import java.io.FileReader;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -21,6 +23,8 @@ public class StatsWriter{
     public StatsWriter(String path, Globals glob) {
         globals = glob;
         try {
+            String userHomeDir = System.getProperty("user.home", ".");
+            path = userHomeDir + path;
             output = new FileWriter(path);
             output.write(header);
             FileWriter runInfo = new FileWriter(path.replace(".txt", "_RUNINFO.txt"));
