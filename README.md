@@ -1,7 +1,7 @@
 Ontogenetic-Algorithm
 =====================
 
-This project was the result of a collaborative effort with a professor at the University of Richmond, Dr. Gary Greenfield. The goal was to investigate a strategy of self modification (the "onto" in "ontogenetic") in genetic algorithms. The motivation comes in part from the recognition of transposons (jumping genes) as playing an important role in biological DNA. The work was based off the work of previous authors Spector And Stoffel (citation at the end), who used this strategy to achieve signicantly more effecient genetic algorithms. The result of our study was contrary to the results of Spector and Stoffel. We found that the most successful genomes tended to not contain ontogenetic algorithms, or evolve controls to avoid their execution.
+This project was the result of a collaborative effort with a professor at the University of Richmond, Dr. Gary Greenfield. The goal was to investigate a strategy of self modification (the "onto" in "ontogenetic") in genetic algorithms. The motivation comes in part from the recognition of transposons (jumping genes) as playing an important role in biological DNA. The work was based off the work of previous authors Spector And Stoffel (citation at the end), who used this strategy to achieve signicantly more effecient genetic algorithms. The result of our study was contrary to the results of Spector and Stoffel. We found that the most successful genomes tended to not contain ontogenetic algorithms, or evolve controls to avoid their execution. A paper describing our results can be found [here](http://http://williambarksdale.com/ontogenetic_programs.pdf).
 
 Interface
 =====================
@@ -30,6 +30,6 @@ The organism view allows one to trace program execution operand by operand by pa
 
 The result of this reseach was a paper submitted to the EMCSR 2012 conference. Although the paper was accepted, due to scheduling conflicts, neither my Professor nor myself were able to attend the conference. 
 
-The paper can be read from my website _here_.
+The paper can be read from my website [here](http://http://williambarksdale.com/ontogenetic_programs.pdf).
 
 Spector, L., and K. Stoffel. (1996a). Automatic Generation of Adaptive Programs. In P. Maes, M. Mataric, J.-A. Meyer, J. Pollack & S.W. Wilson (Eds.), From Animals to Animats 4: Proceedings of the Fourth International Conference on Simulation of Adaptive Behavior (pp. 476-483). Cambridge, MA: The MIT Press.
