@@ -30,6 +30,6 @@ The organism view allows one to trace program execution operand by operand by pa
 
 The result of this reseach was a paper submitted to the EMCSR 2012 conference. Although the paper was accepted, due to scheduling conflicts, neither my Professor nor myself were able to attend the conference. 
 
-The paper can be read from my website [here](http://http://williambarksdale.com/ontogenetic_programs.pdf).
+The paper can be read from my website [here](http://williambarksdale.com/files/ontogenetic_programs.pdf).
 
 Spector, L., and K. Stoffel. (1996a). Automatic Generation of Adaptive Programs. In P. Maes, M. Mataric, J.-A. Meyer, J. Pollack & S.W. Wilson (Eds.), From Animals to Animats 4: Proceedings of the Fourth International Conference on Simulation of Adaptive Behavior (pp. 476-483). Cambridge, MA: The MIT Press.
